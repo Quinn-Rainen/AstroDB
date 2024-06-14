@@ -34,6 +34,7 @@ or die('Error connecting to MySQL server.');
     print $query;
     ?>
 
+    <?php
       $result = mysqli_query($conn, $query)
       or die(mysqli_error($conn));
 
@@ -41,7 +42,7 @@ or die('Error connecting to MySQL server.');
       
     echo "<p><strong>Name</strong> | <strong>Type</strong> | <strong>Magnitude</strong></p><hr>";
 
-   <?php
+   
     while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
     {
         printf("%s | %s | %.2f<br><br>",
