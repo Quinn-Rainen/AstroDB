@@ -40,12 +40,13 @@ or die('Error connecting to MySQL server.');
   $result = mysqli_query($conn, $query)
   or die(mysqli_error($conn));
 
-  while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
-  {
-      printf("Name: %s, Type: %s, Coordinates: %s, Magnitude: %.2f<br><br>",
-             $row['Name'], $row['Type'], $row['Coordinates'], $row['Magnitude']);
-  }
+  echo "<p><strong>Name</strong> | <strong>Type</strong> | <strong>Coordinates</strong> | <strong>Magnitude</strong></p><hr>";
 
+    while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
+    {
+        printf("%s | %s | %s | %.2f<br><br>",
+                $row['Name'], $row['Type'], $row['Coordinates'], $row['Magnitude']);
+    }
   mysqli_free_result($result);
   mysqli_close($conn);
   ?>
