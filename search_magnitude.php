@@ -42,7 +42,7 @@ or die('Error connecting to MySQL server.');
 
   while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
   {
-      printf("Name: %s, Type: %s, Coordinates: %s, Magnitude: %.2f",
+      printf("\nName: %s, Type: %s, Coordinates: %s, Magnitude: %.2f\n",
              $row['Name'], $row['Type'], $row['Coordinates'], $row['Magnitude']);
   }
 
