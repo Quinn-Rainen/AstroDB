@@ -25,7 +25,14 @@ or die('Error connecting to MySQL server.');
       $query = "SELECT Name, Type, Coordinates, Magnitude, ImagePath
                 FROM CelestialObjects
                 WHERE Magnitude BETWEEN $min_magnitude AND $max_magnitude";
+    ?>
 
+    <p>
+    The query:
+    <p>
+    <?php
+    print $query;
+    ?>
 
       $result = mysqli_query($conn, $query)
       or die(mysqli_error($conn));
@@ -34,6 +41,7 @@ or die('Error connecting to MySQL server.');
       
     echo "<p><strong>Name</strong> | <strong>Type</strong> | <strong>Magnitude</strong></p><hr>";
 
+   <?php
     while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
     {
         printf("%s | %s | %.2f<br><br>",
