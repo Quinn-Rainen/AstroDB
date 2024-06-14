@@ -44,7 +44,7 @@ or die('Error connecting to MySQL server.');
 
     while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
     {
-        printf("%s | %s | %s | %.2f<br><br>",
+        printf("%s | %s | %.2f<br><br>",
                 $row['Name'], $row['Type'], $row['Magnitude']);
     }
   mysqli_free_result($result);
