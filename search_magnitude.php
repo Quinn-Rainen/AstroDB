@@ -31,11 +31,7 @@ or die('Error connecting to MySQL server.');
       or die(mysqli_error($conn));
 
 
-
-        <p>
-        The query:
-        <p>
-        print $query;
+      
     echo "<p><strong>Name</strong> | <strong>Type</strong> | <strong>Magnitude</strong></p><hr>";
 
     while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
