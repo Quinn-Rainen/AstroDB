@@ -1,0 +1,109 @@
+<html>
+<head>
+       <title>CS 451 Final Project</title>
+</head>
+
+<body bgcolor="white">
+
+<h1>Astronomy Database</h2>
+
+CS 451 Final Project
+<br>
+Quinn Rainen
+<p>
+<hr>
+<p>
+
+<h2>List Active Projects by Lead Researcher</h2>
+
+<!-- List all Active Projects & Researchers  -->
+<form action="active_projects_researchers.php" method="POST">
+
+<label for="researcher">Researcher:</label>
+<input type="text" name="researcher"> <br>
+<input type="submit" value="submit">
+<input type="reset" value="erase">
+</form>
+
+<p>
+<a href="active_projects_researchers.txt" >Contents</a> of the PHP page that gets called.
+
+<hr>
+<p>
+
+<h2>Search Celestial Objects by Type</h2>
+
+<form action="search_by_type.php" method="POST">
+    <label for="type">Type:</label>
+    <input type="text" name="type" id="type" required>
+    <br>
+    <input type="submit" value="Search">
+    <input type="reset" value="Reset">
+</form>
+
+<a href="search_by_type.txt" >Contents</a> of the PHP page that gets called.
+
+
+<hr>
+<p>
+
+<h2>Search Celestial Objects by Magnitude Range</h2>
+
+<form action="search_magnitude.php" method="POST">
+    <label for="min_magnitude">Minimum Magnitude:</label>
+    <input type="text" name="min_magnitude" required> <br>
+    <label for="max_magnitude">Maximum Magnitude:</label>
+    <input type="text" name="max_magnitude" required> <br>
+    <input type="submit" value="Search">
+</form>
+
+<a href="search_by_magnitude.txt" >Contents</a> of the PHP page that gets called.
+
+<hr>
+<p>
+
+<h2>Search Rovers by Mission</h2>
+
+<!-- put the mission name column -->
+<form action="search_mission_rovers.php" method="POST">
+    <label for="missionName">Mission Name:</label>
+    <input type="text" name="missionName" id="missionName" required>
+    <br>
+    <input type="submit" value="Search">
+    <input type="reset" value="Reset">
+</form>
+
+
+<a href="search_by_mission_rovers.txt" >Contents</a> of the PHP page that gets called.
+
+<hr>
+<p>
+
+
+<h2> List Observations by Researcher</h2>
+
+<form action="search_researcher_observations.php" method="POST">
+    <label for="researcher">Researcher Name:</label>
+    <input type="text" name="researcher" id="researcher" required>
+    <br>
+    <input type="submit" value="Search">
+    <input type="reset" value="Reset">
+</form>
+
+<a href="search_researcher_observations.txt" >Contents</a> of the PHP page that gets called.
+
+<hr>
+<p>
+
+<p>
+<a href="main.txt" >Contents</a> of this page.
+
+<p>
+
+<a href="tables.html" >Contents</a> of the tables.
+
+<p>
+<a href="connectionData.txt" >Contents</a> of the connection data.
+
+</body>
+</html>

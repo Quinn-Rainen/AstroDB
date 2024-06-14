@@ -1,0 +1,28 @@
+<html>
+
+<a href="main.html" >go to the main page</a> 
+
+<h1>Tables in my AstronomyDB</h1>
+<hr>
+<pre>
+<a href="tables/MarsMissions.txt" >MarsMissions</a>
+
+<a href="tables/CelestialObjects.txt" >CelestialObjects</a> 
+
+<a href="tables/Observations.txt" >Observations</a> 
+
+<a href="tables/Observatories.txt" >Observatories</a>
+
+<a href="tables/Projects.txt" >Projects</a>
+
+<a href="tables/Researchers.txt" >Researchers</a>
+
+<a href="tables/Rovers.txt" >Rovers</a> 
+</pre>
+<hr>
+<p>
+
+<a href="tables.txt" >Contents</a> of this page.
+
+</body>
+</html>
