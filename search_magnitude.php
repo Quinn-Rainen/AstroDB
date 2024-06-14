@@ -26,18 +26,16 @@ or die('Error connecting to MySQL server.');
                 FROM CelestialObjects
                 WHERE Magnitude BETWEEN $min_magnitude AND $max_magnitude";
 
-        <p>
-        The query:
-        <p>
-        <?php
-        print $query;
-        ?>
-
 
       $result = mysqli_query($conn, $query)
       or die(mysqli_error($conn));
 
 
+
+        <p>
+        The query:
+        <p>
+        print $query;
     echo "<p><strong>Name</strong> | <strong>Type</strong> | <strong>Magnitude</strong></p><hr>";
 
     while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
