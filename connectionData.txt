@@ -1,7 +1,0 @@
-<?php
-$server = "ix.cs.uoregon.edu";
-$dbname = "astronomyDB";
-$user = "guest";
-$pass = "guest";
-$port = "3630";
-?>
